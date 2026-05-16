@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SciTech Connect: Society in the Age of Innovation</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom cursor (desktop) -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Animated star background -->
+  <canvas id="stars-canvas"></canvas>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav>
+    <div class="nav-logo">⬡ SciTech Connect</div>
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#members">Members</a></li>
+      <li><a href="#infographics">Infographics</a></li>
+      <li><a href="#conclusion">Conclusion</a></li>
+      <li><a href="#references">References</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== HOMEPAGE ========== -->
+  <section id="home">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">Science · Technology · Society — STS</div>
+
+      <h1 class="hero-title">
+        <span class="line1">SciTech Connect:</span>
+        <span class="line2">Society in the Age<br>of Innovation</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        A collaborative exploration of how science and technology shape — and are shaped by — the society we live in.
+      </p>
+
+      <!-- Instructor card -->
+      <div class="card">
+        <div class="profile-circle">
+          <img src="dadadadada.jpg" alt="Instructor Avatar">
+        </div>
+        <div class="instructor-info">
+          <div class="instructor-label">STS INSTRUCTOR</div>
+          <div class="instructor-name">Ma'am Christalyn Serafica Alibangbang</div>
+        </div>
+      </div>
+
+      <!-- Short STS intro -->
+      <div class="hero-intro-box">
+        <p>
+          This project investigates the dynamic relationship between scientific advancement,
+          technological innovation, and the societies they emerge from. Through nine individual
+          infographics, we explore how STS frameworks help us critically understand modern
+          technological realities — from AI ethics and digital inequality to climate science
+          and biotechnology.
+        </p>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>SCROLL</span>
+      <span class="arrow">↓</span>
+    </div>
+  </section>
+
+  <!-- ========== GROUP MEMBERS ========== -->
+  <section id="members">
+    <div class="section-header reveal">
+      <span class="section-tag">GROUP MEMBERS</span>
+      <h2 class="section-title">The Team</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="members-grid">
+
+      <!-- #01 Daniel Rivero -->
+      <div class="member-card reveal tilt-3d" data-member="0">
+        <div class="member-number">#01</div>
+        <div class="member-avatar">
+          <div class="member-avatar-fallback">
+            <div class="circle"><img src="r.jpg.jpg" alt="Daniel Rivero"></div>
+          </div>
+        </div>
+        <div class="member-name">DANIEL RIVERO</div>
+        <div class="member-role">AI &amp; Society</div>
+      </div>
+
+      <!-- #02 Sharmella Joy Rama -->
+      <div class="member-card reveal tilt-3d" data-member="1">
+        <div class="member-number">#02</div>
+        <div class="member-avatar">
+          <div class="member-avatar-fallback">
+            <div class="circle"><img src="RAM.jpg" alt="Sharmella Joy Rama"></div>
+          </div>
+        </div>
+        <div class="member-name">SHARMELLA JOY RAMA</div>
+        <div class="member-role">Nanotechnology</div>
+      </div>
+
+      <!-- #03 Nick Palacio -->
+      <div class="member-card reveal tilt-3d" data-member="2">
+        <div class="member-number">#03</div>
+        <div class="member-avatar">
+          <div class="member-avatar-fallback">
+            <div class="circle"><img src="pl.jpg.jpg" alt="Nick Palacio"></div>
+          </div>
+        </div>
+        <div class="member-name">NICK PALACIO</div>
+        <div class="member-role">Cybersecurity</div>
+      </div>
+
+      <!-- #04 Mikaela Pontillo -->
+      <div class="member-card reveal tilt-3d" data-member="3">
+        <div class="member-number">#04</div>
+        <div class="member-avatar">
+          <div class="member-avatar-fallback">
+            <div class="circle"><img src="p.jpg.jpg" alt="Mikaela Pontillo"></div>
+          </div>
+        </div>
+        <div class="member-name">MIKAELA PONTILLO</div>
+        <div class="member-role">Technology &amp; Mental Health</div>
+      </div>
+
+      <!-- #05 Louie Mar Tusoy -->
+      <div class="member-card reveal tilt-3d" data-member="4">
+        <div class="member-number">#05</div>
+        <div class="member-avatar">
+          <div class="member-avatar-fallback">
+            <div class="circle"><img src="t.jpg.jpg" alt="Louie Mar Tusoy"></div>
+          </div>
+        </div>
+        <div class="member-name">LOUIE MAR TUSOY</div>
+        <div class="member-role">The Information Age</div>
+      </div>
+
+      <!-- #06 Princess Shaimer Quibol -->
+      <div class="member-card reveal tilt-3d" data-member="5">
+        <div class="member-number">#06</div>
+        <div class="member-avatar">
+          <div class="member-avatar-fallback">
+            <div class="circle"><img src="q.jpg.jpg" alt="Princess Shaimer Quibol"></div>
+          </div>
+        </div>
+        <div class="member-name">PRINCESS SHAIMER QUIBOL</div>
+        <div class="member-role">Climate Change &amp; Technology</div>
+      </div>
+
+      <!-- #07 Yessha Solaña -->
+      <div class="member-card reveal tilt-3d" data-member="6">
+        <div class="member-number">#07</div>
+        <div class="member-avatar">
+          <div class="member-avatar-fallback">
+            <div class="circle"><img src="s.jpg.jpg" alt="Yessha Solaña"></div>
+          </div>
+        </div>
+        <div class="member-name">YESSHA SOLAÑA</div>
+        <div class="member-role">Renewable Energy</div>
+      </div>
+
+      <!-- #08 Carl Julios Sabandal -->
+      <div class="member-card reveal tilt-3d" data-member="7">
+        <div class="member-number">#08</div>
+        <div class="member-avatar">
+          <div class="member-avatar-fallback">
+            <div class="circle"><img src="ss.jpg.jpg" alt="Carl Julios Sabandal"></div>
+          </div>
+        </div>
+        <div class="member-name">CARL JULIOS SABANDAL</div>
+        <div class="member-role">Biodiversity Conservation</div>
+      </div>
+
+      <!-- #09 Mark Rulete -->
+      <div class="member-card reveal tilt-3d" data-member="8">
+        <div class="member-number">#09</div>
+        <div class="member-avatar">
+          <div class="member-avatar-fallback">
+            <div class="circle"><img src="rr.jpg.jpg" alt="Mark Rulete"></div>
+          </div>
+        </div>
+        <div class="member-name">MARK RULETE</div>
+        <div class="member-role">Environmental Pollution</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== INDIVIDUAL INFOGRAPHICS ========== -->
+  <section id="infographics">
+    <div class="section-header reveal">
+      <span class="section-tag">INDIVIDUAL WORK</span>
+      <h2 class="section-title">Individual Infographics</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="infographics-container reveal">
+
+      <!-- Tab buttons -->
+      <div class="infographic-tabs" id="infographic-tabs">
+        <button class="infographic-tab active" data-tab="0">Daniel R.</button>
+        <button class="infographic-tab" data-tab="1">Sharmella Joy R.</button>
+        <button class="infographic-tab" data-tab="2">Nick P.</button>
+        <button class="infographic-tab" data-tab="3">Mikaela P.</button>
+        <button class="infographic-tab" data-tab="4">Louie Mar T.</button>
+        <button class="infographic-tab" data-tab="5">Princess Shaimer Q.</button>
+        <button class="infographic-tab" data-tab="6">Yessha S.</button>
+        <button class="infographic-tab" data-tab="7">Carl Julios S.</button>
+        <button class="infographic-tab" data-tab="8">Mark R.</button>
+      </div>
+
+      <div class="infographic-display">
+
+        <!-- Panel 0 · Daniel Rivero · AI & Society -->
+        <div class="infographic-panel active" id="panel-0">
+          <div class="infographic-panel-header">
+            <div class="infographic-panel-avatar"
+                 style="border-color:var(--neon-cyan);box-shadow:0 0 15px rgba(0,245,255,0.3);background:rgba(0,245,255,0.1);color:var(--neon-cyan);">
+              <img src="r.jpg.jpg" alt="Daniel Rivero">
+            </div>
+            <div class="infographic-panel-meta">
+              <div class="author">DANIEL RIVERO · #01</div>
+              <h3>THE RISE OF AI: FRIEND OR THREAT TO SOCIETY?</h3>
+              <p>Explores the dual nature of artificial intelligence — its transformative potential in healthcare,
+                education, and productivity, versus ethical concerns about bias, job displacement, and loss of privacy.</p>
+            </div>
+          </div>
+          <div class="infographic-visual">
+            <img src="RIVERO_AI IN SOCIETY.jpg" alt="AI in Society Infographic">
+          </div>
+        </div>
+
+        <!-- Panel 1 · Sharmella Joy Rama · Nanotechnology -->
+        <div class="infographic-panel" id="panel-1">
+          <div class="infographic-panel-header">
+            <div class="infographic-panel-avatar"
+                 style="border-color:var(--neon-purple);box-shadow:0 0 15px rgba(191,0,255,0.3);background:rgba(191,0,255,0.1);color:var(--neon-purple);">
+              <img src="RAM.jpg" alt="Sharmella Joy Rama">
+            </div>
+            <div class="infographic-panel-meta">
+              <div class="author">SHARMELLA JOY RAMA · #02</div>
+              <h3>NANOTECHNOLOGY</h3>
+              <p>Explores the science of manipulating materials at the nanoscale to create innovative technologies
+                with enhanced properties, revolutionizing fields such as medicine, electronics, energy, and
+                environmental sustainability.</p>
+            </div>
+          </div>
+          <div class="infographic-visual">
+            <img src="RAMA_NANOTECHNOLOGY.jpg" alt="Nanotechnology Infographic">
+          </div>
+        </div>
+
+        <!-- Panel 2 · Nick Palacio · Cybersecurity -->
+        <div class="infographic-panel" id="panel-2">
+          <div class="infographic-panel-header">
+            <div class="infographic-panel-avatar"
+                 style="border-color:var(--neon-pink);box-shadow:0 0 15px rgba(255,0,110,0.3);background:rgba(255,0,110,0.1);color:var(--neon-pink);">
+              <img src="pl.jpg.jpg" alt="Nick Palacio">
+            </div>
+            <div class="infographic-panel-meta">
+              <div class="author">NICK PALACIO · #03</div>
+              <h3>CYBERSECURITY</h3>
+              <p>Focuses on protecting digital systems, networks, and data from cyber threats, while addressing
+                challenges such as hacking, privacy breaches, and online security in an increasingly connected world.</p>
+            </div>
+          </div>
+          <div class="infographic-visual">
+            <img src="cyber.jpg" alt="Cybersecurity Infographic">
+          </div>
+        </div>
+
+        <!-- Panel 3 · Mikaela Pontillo · Technology & Mental Health -->
+        <div class="infographic-panel" id="panel-3">
+          <div class="infographic-panel-header">
+            <div class="infographic-panel-avatar"
+                 style="border-color:#39ff14;box-shadow:0 0 15px rgba(57,255,20,0.3);background:rgba(57,255,20,0.1);color:#39ff14;">
+              <img src="p.jpg.jpg" alt="Mikaela Pontillo">
+            </div>
+            <div class="infographic-panel-meta">
+              <div class="author">MIKAELA PONTILLO · #04</div>
+              <h3>TECHNOLOGY &amp; MENTAL HEALTH</h3>
+              <p>Explores the intersection of technology and mental health, examining how digital tools can support
+                psychological well-being while also addressing concerns about screen time, social media impact,
+                and online safety.</p>
+            </div>
+          </div>
+          <div class="infographic-visual">
+            <img src="mental.jpg" alt="Technology & Mental Health Infographic">
+          </div>
+        </div>
+
+        <!-- Panel 4 · Louie Mar Tusoy · The Information Age -->
+        <div class="infographic-panel" id="panel-4">
+          <div class="infographic-panel-header">
+            <div class="infographic-panel-avatar"
+                 style="border-color:#ff9500;box-shadow:0 0 15px rgba(255,149,0,0.3);background:rgba(255,149,0,0.1);color:#ff9500;">
+              <img src="t.jpg.jpg" alt="Louie Mar Tusoy">
+            </div>
+            <div class="infographic-panel-meta">
+              <div class="author">LOUIE MAR TUSOY · #05</div>
+              <h3>THE INFORMATION AGE</h3>
+              <p>Highlights the rapid growth of digital technology and global connectivity, transforming how people
+                access, share, and use information in communication, business, education, and everyday life.</p>
+            </div>
+          </div>
+          <div class="infographic-visual">
+            <img src="infoo.jpg" alt="The Information Age Infographic">
+          </div>
+        </div>
+
+        <!-- Panel 5 · Princess Shaimer Quibol · Climate Change & Technology -->
+        <div class="infographic-panel" id="panel-5">
+          <div class="infographic-panel-header">
+            <div class="infographic-panel-avatar"
+                 style="border-color:#00c8ff;box-shadow:0 0 15px rgba(0,200,255,0.3);background:rgba(0,200,255,0.1);color:#00c8ff;">
+              <img src="q.jpg.jpg" alt="Princess Shaimer Quibol">
+            </div>
+            <div class="infographic-panel-meta">
+              <div class="author">PRINCESS SHAIMER QUIBOL · #06</div>
+              <h3>CLIMATE CHANGE &amp; TECHNOLOGY</h3>
+              <p>Explores the relationship between climate change and technology, examining how digital solutions
+                can address environmental challenges while also considering the carbon footprint of tech infrastructure.</p>
+            </div>
+          </div>
+          <div class="infographic-visual">
+            <img src="climatee.jpg" alt="Climate Change & Technology Infographic">
+          </div>
+        </div>
+
+        <!-- Panel 6 · Yessha Solaña · Renewable Energy -->
+        <div class="infographic-panel" id="panel-6">
+          <div class="infographic-panel-header">
+            <div class="infographic-panel-avatar"
+                 style="border-color:#ff4444;box-shadow:0 0 15px rgba(255,68,68,0.3);background:rgba(255,68,68,0.1);color:#ff4444;">
+              <img src="s.jpg.jpg" alt="Yessha Solaña">
+            </div>
+            <div class="infographic-panel-meta">
+              <div class="author">YESSHA SOLAÑA · #07</div>
+              <h3>RENEWABLE ENERGY</h3>
+              <p>Explores sustainable energy sources such as solar, wind, and hydro power, promoting cleaner
+                alternatives to fossil fuels while addressing environmental protection and long-term energy security.</p>
+            </div>
+          </div>
+          <div class="infographic-visual">
+            <img src="renewable.jpg" alt="Renewable Energy Infographic">
+          </div>
+        </div>
+
+        <!-- Panel 7 · Carl Julios Sabandal · Biodiversity Conservation -->
+        <div class="infographic-panel" id="panel-7">
+          <div class="infographic-panel-header">
+            <div class="infographic-panel-avatar"
+                 style="border-color:#44ff88;box-shadow:0 0 15px rgba(68,255,136,0.3);background:rgba(68,255,136,0.1);color:#44ff88;">
+              <img src="ss.jpg.jpg" alt="Carl Julios Sabandal">
+            </div>
+            <div class="infographic-panel-meta">
+              <div class="author">CARL JULIOS SABANDAL · #08</div>
+              <h3>BIODIVERSITY CONSERVATION</h3>
+              <p>Explores the importance of preserving biodiversity and the threats it faces from human activities,
+                emphasizing the need for conservation efforts to protect ecosystems and species.</p>
+            </div>
+          </div>
+          <div class="infographic-visual">
+            <img src="BIOOO.jpg" alt="Biodiversity Conservation Infographic">
+          </div>
+        </div>
+
+        <!-- Panel 8 · Mark Rulete · Environmental Pollution -->
+        <div class="infographic-panel" id="panel-8">
+          <div class="infographic-panel-header">
+            <div class="infographic-panel-avatar"
+                 style="border-color:#ffdd00;box-shadow:0 0 15px rgba(255,221,0,0.3);background:rgba(255,221,0,0.1);color:#ffdd00;">
+              <img src="rr.jpg.jpg" alt="Mark Rulete">
+            </div>
+            <div class="infographic-panel-meta">
+              <div class="author">MARK RULETE · #09</div>
+              <h3>ENVIRONMENTAL POLLUTION</h3>
+              <p>Examines the impact of pollution on the environment and human health, exploring causes, effects,
+                and potential solutions for mitigation.</p>
+            </div>
+          </div>
+          <div class="infographic-visual">
+            <img src="ENVII.jpg" alt="Environmental Pollution Infographic">
+          </div>
+        </div>
+
+      </div><!-- /infographic-display -->
+    </div><!-- /infographics-container -->
+  </section>
+
+  <!-- ========== CONCLUSION ========== -->
+  <section id="conclusion">
+    <div class="section-header reveal">
+      <span class="section-tag">TAKEAWAYS</span>
+      <h2 class="section-title">Conclusion</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="conclusion-grid reveal">
+
+      <div class="conclusion-card lessons">
+        <div class="conclusion-icon">💡</div>
+        <h3>Lessons Learned</h3>
+        <ul class="lesson-list">
+          <li>Technology is never neutral — it reflects the values, biases, and power structures of the society that creates it.</li>
+          <li>Innovation without ethical frameworks can entrench inequality rather than solve it.</li>
+          <li>The relationship between science, technology, and society is bidirectional: each shapes the other continuously.</li>
+          <li>Marginalized communities are disproportionately affected by technological risks, while receiving fewer benefits.</li>
+          <li>Critical technological literacy is now an essential civic skill — not just a technical one.</li>
+          <li>Local context matters: what works in developed nations may not be appropriate in the Global South.</li>
+        </ul>
+      </div>
+
+      <div class="conclusion-card importance">
+        <div class="conclusion-icon">🌐</div>
+        <h3>Why STS Matters in Our Course</h3>
+        <p class="importance-text">
+          In an age where <strong>AI reshapes labor markets</strong>, gene editing redefines human identity,
+          and social media rewires democracy, the Science, Technology, and Society framework is not optional —
+          it is essential.<br><br>
+          STS teaches us to ask: <strong>who benefits, who is harmed, and who decides?</strong> These are not
+          merely academic questions — they are the questions that will define our generation's relationship
+          with the technologies we inherit and create.<br><br>
+          As future professionals and citizens, we are not passive recipients of technological change.
+          <strong>We are its architects.</strong> STS equips us to build a future that is not only
+          technologically advanced, but also just, inclusive, and human-centered.<br><br>
+          This course has challenged us to see beyond innovation's shine — to examine the
+          <strong>social fabric</strong> that technology both reflects and reshapes.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== REFERENCES ========== -->
+  <section id="references">
+    <div class="section-header reveal">
+      <span class="section-tag">SOURCES</span>
+      <h2 class="section-title">References</h2>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="references-box reveal">
+
+      <div class="ref-item">
+        <span class="ref-num">[1]</span>
+        <span class="ref-text">
+          UNESCO – Ethics of Artificial Intelligence.<br>
+          <a href="https://www.unesco.org/en/artificial-intelligence/recommendation-ethics" target="_blank" rel="noopener">
+            https://www.unesco.org/en/artificial-intelligence/recommendation-ethics
+          </a>
+        </span>
+      </div>
+
+      <div class="ref-item">
+        <span class="ref-num">[2]</span>
+        <span class="ref-text">
+          World Economic Forum – The Future of Jobs Report.<br>
+          <a href="https://www.weforum.org/reports/the-future-of-jobs-report-2023/" target="_blank" rel="noopener">
+            https://www.weforum.org/reports/the-future-of-jobs-report-2023/
+          </a>
+        </span>
+      </div>
+
+      <div class="ref-item">
+        <span class="ref-num">[3]</span>
+        <span class="ref-text">
+          Britannica – Science, Technology, and Society (STS).<br>
+          <a href="https://www.britannica.com/topic/science-technology-and-society" target="_blank" rel="noopener">
+            https://www.britannica.com/topic/science-technology-and-society
+          </a>
+        </span>
+      </div>
+
+      <div class="ref-item">
+        <span class="ref-num">[4]</span>
+        <span class="ref-text">
+          Stanford Encyclopedia of Philosophy – Ethics of AI and Technology.<br>
+          <a href="https://plato.stanford.edu/entries/ethics-ai/" target="_blank" rel="noopener">
+            https://plato.stanford.edu/entries/ethics-ai/
+          </a>
+        </span>
+      </div>
+
+      <div class="ref-item">
+        <span class="ref-num">[5]</span>
+        <span class="ref-text">
+          United Nations – Sustainable Development Goals and Technology.<br>
+          <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener">
+            https://sdgs.un.org/goals
+          </a>
+        </span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <span style="color:var(--neon-cyan);">⬡</span>
+    SciTech Connect: Society in the Age of Innovation &nbsp;·&nbsp; STS Course Project &nbsp;·&nbsp; All rights reserved
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
